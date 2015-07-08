@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Page Object Model Suite]">
+  <test name="LoginTest(failed)">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="TC_03_Login"/>
+          <include name="closeup"/>
+          <include name="setup"/>
+          <include name="TC_02_Login"/>
+          <include name="TC_04_Login"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.RegistrationTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeup"/>
+        </methods>
+      </class> <!-- tests.RegistrationTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+  <test name="RegistrationTest(failed)">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="closeup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.RegistrationTest">
+        <methods>
+          <include name="TC_02_Registration"/>
+          <include name="setup"/>
+          <include name="TC_04_Registration"/>
+          <include name="TC_03_Registration"/>
+          <include name="closeup"/>
+        </methods>
+      </class> <!-- tests.RegistrationTest -->
+    </classes>
+  </test> <!-- RegistrationTest(failed) -->
+</suite> <!-- Failed suite [Page Object Model Suite] -->
